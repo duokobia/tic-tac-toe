@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Tic-Tac-Toe || Vanilla JS</title>
+</head>
+<body>
+    <main>
+        <h1 class="heading">Tic-Tac-Toe</h1>
+        <div class="customPlayers">
+            <span class="playerA" id="playX">Player 1</span>
+            <span class="playerB" id="playY">Player 2</span>
+        </div>
+        <div class="playerName"> 
+            <label>Player 1</label>
+            <input type="text" class="playerA" id="playerX" value="">
+            <label>Player 2</label>
+            <input type="text" class="playerA" id="playerY">
+            <button class="btn" onclick="setPlayersNames()">Set Players' Name</button>
+        </div>
+       
+        <p class="turn">Next Move: X</p>
+        <p class="winner">Game On</p>
+
+        <div class="board">
+            <div class="box" data-box-index ="0"></div>
+            <div class="box" data-box-index ="1"></div>
+            <div class="box" data-box-index ="2"></div>
+            <div class="box" data-box-index ="3"></div>
+            <div class="box" data-box-index ="4"></div>
+            <div class="box" data-box-index ="5"></div>
+            <div class="box" data-box-index ="6"></div>
+            <div class="box" data-box-index ="7"></div>
+            <div class="box" data-box-index ="8"></div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
